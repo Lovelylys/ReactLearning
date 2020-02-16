@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>组件组合使用</title>
+</head>
+<body>
+<div id="wrap"></div>
+</body>
+<script src="js/react.development.js"></script>
+<script src="js/react-dom.development.js"></script>
+<script src="js/babel.min.js"></script>
+<script src="js/prop-types.js"></script>
+<script type="text/babel">
+    class App extends React.Component{
+        constructor(props) {
+            super(props);
+            this.state = {
+                todoList: ['吃饭', '睡觉', '打代码']
+            }
+            this.addToList = this.addToList.bind(this);
+        }
+
+        addToList(props) {
+            const {todoList} = this.state;
+            todoList.unshift(props);
+            this.setState({todoList});
+        }
+
+        render() {
+            const {todoList} = this.state;
+            return (
+                <div>
+                    <TodoAdd addToList={this.addToList} todoList={todoList}/>
+                    <TodoList todoList={todoList}/>
+                </div>
+            )
+        }
+    }
+    class TodoAdd extends React.Component{
+        constructor(props) {
+            super(props);
+            this.add = this.add.bind(this);
+        }
+        add() {
+            const input = this.toInput.value.trim();
+            if(!input){
+                return;
+            }
+            this.props.addToList(input);
+            this.toInput.value = '';
+        }
+        render() {
+            return (
+                <div>
+                    <input ref={input => this.toInput = input}/>
+                    <button onClick={this.add}>add#{this.props.todoList.length+1}</button>
+                </div>
+            )
+        }
+    }
+    TodoAdd.propTypes = {
+        addToList: PropTypes.func.isRequired,
+        todoList: PropTypes.array.isRequired
+    }
+    class TodoList extends React.Component{
+        constructor(props) {
+            super(props);
+        }
+        render() {
+            const {todoList} = this.props;
+            return (
+                <ul>
+                    {
+                        todoList.map((str,index) => <li key={index}>{str}</li>)
+                    }
+                </ul>
+            )
+        }
+    }
+    TodoList.propsTypes = {
+        todoList: PropTypes.array.isRequired
+    }
+    ReactDOM.render(<App/>, document.getElementById("wrap"));
+</script>
+</html>

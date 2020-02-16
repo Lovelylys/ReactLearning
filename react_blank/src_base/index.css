@@ -1,0 +1,14 @@
+.logo{
+    width: 500px;
+    height: 500px;
+}
+.title{
+    color: rgba(123,123,123,.5);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.pix{
+    text-align: center;
+}

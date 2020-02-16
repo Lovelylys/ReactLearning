@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>生命周期</title>
+</head>
+<body>
+<div id="wrap"></div>
+</body>
+<script src="js/react.development.js"></script>
+<script src="js/react-dom.development.js"></script>
+<script src="js/babel.min.js"></script>
+<script src="js/prop-types.js"></script>
+<script type="text/babel">
+    class Life extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+                opacity: 1
+            }
+            this.handleClick = this.handleClick.bind(this)
+        }
+
+        handleClick() {
+            ReactDOM.unmountComponentAtNode(document.getElementById("wrap"));
+        }
+        componentWillMount() {
+            console.log("will mount");
+        }
+
+        componentDidMount() {
+            this.timeId = setInterval(function () {
+                console.log('--------')
+                let {opacity} = this.state;
+                opacity -= 0.1;
+                if (opacity <= 0) {
+                    opacity = 1;
+                }
+                this.setState({opacity});
+            }.bind(this), 200)
+        }
+
+        componentWillUpdate() {
+            console.log("will update");
+        }
+        componentDidUpdate() {
+            console.log("did update");
+        }
+
+        componentWillUnmount() {
+            console.log("will unmount");
+            clearInterval(this.timeId);
+        }
+        render() {
+            return (
+                <div>
+                    <h2 style={{opacity: this.state.opacity}}>React太难了</h2>
+                    <button onClick={this.handleClick}>不想活了</button>
+                </div>
+            )
+        }
+    }
+
+    ReactDOM.render(<Life/>, document.getElementById("wrap"));
+</script>
+</html>

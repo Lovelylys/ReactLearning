@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+<div id="wrap"></div>
+</body>
+<script src="js/react.development.js"></script>
+<script src="js/react-dom.development.js"></script>
+<script src="js/babel.min.js"></script>
+<script src="js/prop-types.js"></script>
+<script type="text/babel">
+    class LoginForm extends React.Component {
+        constructor(props) {
+            super(props);
+            this.handleSubmit = this.handleSubmit.bind(this);
+            this.handleChange = this.handleChange.bind(this);
+            this.state = {
+                pwd: ""
+            }
+        }
+
+        handleSubmit(event) {
+            event.preventDefault();
+            alert("账号为: " + this.Nameinput.value
+                + " 密码为：" + this.state.pwd);
+        }
+
+        handleChange(event) {
+            const pwd = event.target.value;
+            this.setState({pwd});
+        }
+
+        render() {
+            return (
+                <form action="/test" onSubmit={this.handleSubmit}>
+                    账号：<input type="text" ref={input => this.Nameinput = input}/>
+                    密码：<input type="password" value={this.state.pwd} onChange={this.handleChange}/>
+                    <input type="submit" value="登陆"/>
+                </form>
+            )
+        }
+    }
+    ReactDOM.render(<LoginForm/>, document.getElementById("wrap"));
+</script>
+</html>
