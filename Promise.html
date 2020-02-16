@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Promise</title>
+</head>
+<body>
+<div id="wrap"></div>
+</body>
+<script src="js/react.development.js"></script>
+<script src="js/react-dom.development.js"></script>
+<script src="js/babel.min.js"></script>
+<script src="js/prop-types.js"></script>
+<script src="https://cdn.bootcss.com/axios/0.17.1/axios.min.js"></script>
+<script type="text/babel">
+    class PromiseAjax extends React.Component {
+        state = {
+            repoUrl: '',
+            repoName: ''
+        }
+
+        componentDidMount() {
+            const url = `https://api.github.com/search/repositories?q=re&sort=stars`;
+            axios.get(url).then(reponse => {
+                const result = reponse.data;
+                const {name, html_url} = result.items[0];
+                this.setState({
+                    repoUrl: html_url,
+                    repoName: name
+                });
+            })
+            .catch(error => {
+                alert(error.message);
+            })
+            /*fetch(url)
+            .then(response => {
+                return response.json();
+            })
+            .then(data =>{
+                const {name, html_url} = data.items[0];
+                this.setState({
+                    repoUrl: html_url,
+                    repoName: name
+                })
+            })*/
+        }
+
+        render() {
+            const {repoUrl, repoName} = this.state;
+
+            return (
+                <div>
+                    <h2>most start repo is<a href={repoUrl}>{repoName}</a></h2>
+                </div>
+            )
+        }
+    }
+
+    ReactDOM.render(<PromiseAjax/>, document.getElementById("wrap"));
+</script>
+</html>

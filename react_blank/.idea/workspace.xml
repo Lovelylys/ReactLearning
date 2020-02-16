@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d0e9ba34-ca20-4dd9-ac69-0a560bb8e39c" name="Default Changelist" comment="" />
+    <list default="true" id="d0e9ba34-ca20-4dd9-ac69-0a560bb8e39c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/app.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/search.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/users-list.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src_comment/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src_comment/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/app/app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src_comment/components/app/app.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/component-add/component-add.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src_comment/components/component-add/component-add.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/component-item/component-item.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src_comment/components/component-item/component-item.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/component-list/component-list.css" beforeDir="false" afterPath="$PROJECT_DIR$/src_comment/components/component-list/component-list.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/component-list/component-list.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src_comment/components/component-list/component-list.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,12 +29,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1Xno6y37kI1R8ve4Vx7pBuEQzgP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -24,15 +47,17 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\ReactLearning\react_blank\public\css" />
+      <recent name="E:\ReactLearning\react_blank\src" />
+      <recent name="E:\ReactLearning\react_blank\public" />
       <recent name="E:\ReactLearning\react_blank" />
+      <recent name="E:\ReactLearning\react_blank\public\css" />
     </key>
   </component>
   <component name="RunManager">
@@ -65,6 +90,8 @@
       <workItem from="1581691051829" duration="15708000" />
       <workItem from="1581764640600" duration="1450000" />
       <workItem from="1581824424926" duration="675000" />
+      <workItem from="1581826047311" duration="605000" />
+      <workItem from="1581838889030" duration="3565000" />
     </task>
     <servers />
   </component>
