@@ -1,12 +1,17 @@
-import {DECREMENT, INCREMENT} from "./action-types";
+import {COMMENT_ADD, COMMENT_DEL, COMMENT_REC} from "./action-types"
 
-export const increment = (number) => ({type: INCREMENT, data: number})
-export const decrement = (number) => ({type: DECREMENT, data: number})
+export const handleAdd = (comment) => ({type:COMMENT_ADD, data: comment})
+export const deleteComment = (index) => ({type:COMMENT_DEL, data: index})
+const receiveComments = (comment) => ({type: COMMENT_REC, data: comment})
 
-export const incrementAsync = number => {
+export const initComment = () => {
     return dispatch => {
         setTimeout(() => {
-            dispatch(increment(number))
+            const initComments = [
+                {userName: 'Tom', content: 'react很简单'},
+                {userName: 'Jack', content: 'react你猜'}
+            ]
+            dispatch(receiveComments(initComments));
         }, 1000)
     }
 }

@@ -2,18 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0e9ba34-ca20-4dd9-ac69-0a560bb8e39c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src_users/components/app.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src_users/components/search.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src_users/components/users-list.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src_users/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src_users/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src_users/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react_redux/src/components/component-add/component-add.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react_redux/src/components/component-item/component-item.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react_redux/src/components/component-list/component-list.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react_redux/src/components/component-list/component-list.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react_redux/src/redux/reduces.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react_redux/src_redux/containers/app.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react_redux/src_redux/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react_redux/src_redux/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react_redux/src_redux/redux/action-types.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react_redux/src_redux/redux/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react_redux/src_redux/redux/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/search.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/search.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/users-list.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/users-list.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_redux/src/components/counter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../react_redux/src_redux/components/counter.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_redux/src/containers/app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../react_redux/src/containers/app.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_redux/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_redux/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_redux/src/redux/action-types.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_redux/src/redux/action-types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_redux/src/redux/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_redux/src/redux/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_redux/src/redux/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_redux/src_redux/redux/reducers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_redux/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_redux/src/redux/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +49,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../react_router" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
@@ -86,6 +94,7 @@
       <workItem from="1581824424926" duration="675000" />
       <workItem from="1581826047311" duration="605000" />
       <workItem from="1581838889030" duration="5897000" />
+      <workItem from="1582425706001" duration="729000" />
     </task>
     <servers />
   </component>
