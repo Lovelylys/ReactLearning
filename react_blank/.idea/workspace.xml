@@ -2,24 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0e9ba34-ca20-4dd9-ac69-0a560bb8e39c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/app.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/search.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/users-list.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src_comment/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src_comment/logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src_users/components/app.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src_users/components/search.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src_users/components/users-list.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src_users/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src_users/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src_users/logo.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/app/app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src_comment/components/app/app.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/component-add/component-add.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src_comment/components/component-add/component-add.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/component-item/component-item.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src_comment/components/component-item/component-item.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/component-list/component-list.css" beforeDir="false" afterPath="$PROJECT_DIR$/src_comment/components/component-list/component-list.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/component-list/component-list.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src_comment/components/component-list/component-list.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/search.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/search.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/users-list.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/users-list.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,16 +41,16 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../react_router" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\ReactLearning\react_blank" />
       <recent name="E:\ReactLearning\react_blank\src" />
       <recent name="E:\ReactLearning\react_blank\public" />
-      <recent name="E:\ReactLearning\react_blank" />
       <recent name="E:\ReactLearning\react_blank\public\css" />
     </key>
   </component>
@@ -91,7 +85,7 @@
       <workItem from="1581764640600" duration="1450000" />
       <workItem from="1581824424926" duration="675000" />
       <workItem from="1581826047311" duration="605000" />
-      <workItem from="1581838889030" duration="3565000" />
+      <workItem from="1581838889030" duration="5897000" />
     </task>
     <servers />
   </component>
@@ -107,10 +101,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="484" y="138" key="#start/0.0.1536.824@0.0.1536.824" timestamp="1581692187590" />
-    <state x="549" y="170" key="FileChooserDialogImpl" timestamp="1581825158251">
+    <state x="549" y="170" key="FileChooserDialogImpl" timestamp="1581856649679">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1581825158251" />
+    <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1581856649679" />
     <state x="208" y="115" key="SettingsEditor" timestamp="1581735548098">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

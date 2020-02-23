@@ -1,12 +1,9 @@
 import React, {Component} from "react"
 import PropTypes from "prop-types"
 import axios from "axios"
+import PubSub from "pubsub-js"
 
 export default class UserList extends Component{
-    static PropTypes = {
-        searchName: PropTypes.string.isRequired
-    }
-
     state = {
         users: null,
         error: null,
@@ -14,34 +11,36 @@ export default class UserList extends Component{
         loading: false
     }
 
-    componentWillReceiveProps(nextProps) {
-        const searchName = nextProps.searchName;
-        const url = `https://api.github.com/search/users?q=${searchName}`;
 
-        this.setState({
-            initView: false,
-            loading: true
+    componentDidMount() {
+        PubSub.subscribe("searchUserName", (msg, searchName) => {
+            const url = `https://api.github.com/search/users?q=${searchName}`;
+
+            this.setState({
+                initView: false,
+                loading: true
+            })
+
+            axios.get(url)
+                .then(response => {
+                    const result = response.data;
+                    const users = result.items.map(item => ({
+                        name: item.login,
+                        avatarUrl: item.avatar_url,
+                        htmlUrl: item.html_url
+                    }))
+                    this.setState({
+                        users: users,
+                        loading: false
+                    })
+                })
+                .catch(error => {
+                    this.setState({
+                        error: error.message,
+                        loading: false
+                    })
+                })
         })
-
-        axios.get(url)
-            .then(response => {
-                const result = response.data;
-                const users = result.items.map(item => ({
-                    name: item.login,
-                    avatarUrl: item.avatar_url,
-                    htmlUrl: item.html_url
-                }))
-                this.setState({
-                    users: users,
-                    loading: false
-                })
-            })
-            .catch(error => {
-                this.setState({
-                    error: error.message,
-                    loading: false
-                })
-            })
     }
 
     render() {

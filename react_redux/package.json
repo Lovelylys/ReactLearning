@@ -1,5 +1,5 @@
 {
-  "name": "react_blank",
+  "name": "react_redux",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,10 +7,15 @@
     "prop-types": "^15.7.2",
     "pubsub-js": "^1.8.0",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^5.1.2",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
-    "react-scripts": "1.1.0"
+    "react-scripts": "1.1.0",
+    "redux-devtools-extension": "^2.13.8"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,15 +1,13 @@
 import React, {Component} from "react"
 import PropTypes from "prop-types"
+import PubSub from "pubsub-js"
 
 export default class Search extends Component{
-    static PropTypes = {
-        setSearchName: PropTypes.func.isRequired
-    }
-
     searchName = () => {
         const searchName = this.input.value;
         if (searchName) {
-            this.props.setSearchName(searchName);
+            debugger;
+            PubSub.publish("searchUserName", searchName);
         }
     }
 

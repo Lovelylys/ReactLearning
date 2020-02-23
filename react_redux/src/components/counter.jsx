@@ -1,12 +1,8 @@
 import React, {Component} from "react"
 import PropTypes from "prop-types"
-import {increment} from "../redux/actions";
-import {decrement} from "../redux/actions";
-import {incrementAsync} from "../redux/actions";
-import {connect} from 'react-redux'
 
-class App extends Component{
-    static PropTypes = {
+export default class Counter extends Component{
+    static propTypes = {
         count: PropTypes.number.isRequired,
         increment: PropTypes.func.isRequired,
         decrement: PropTypes.func.isRequired,
@@ -33,7 +29,7 @@ class App extends Component{
     }
 
     incrementAsync = () => {
-        const number = this.select.value;
+        const number = this.select.value * 1;
         this.props.incrementAsync(number)
     }
 
@@ -56,8 +52,3 @@ class App extends Component{
         );
     }
 }
-
-export default connect(
-    state => ({count: state}),
-    {increment, decrement, incrementAsync}
-)(App)
